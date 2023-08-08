@@ -9,7 +9,7 @@ stages:
 stage1:
   stage: stage1
   script:
-    - $MYVAR=blabla
+    - MYVAR=blabla
   artifacts:
     reports:
       dotenv: variables.env
