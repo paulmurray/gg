@@ -1,12 +1,5 @@
 variables: 
   MYVAR: "sandbox_env"
-
-default:
-  # This image used across all the stages
-  image:
-    name: ${SHARED_CONTAINER_REGISTRY}/glrunnerimg:$GITLAB_RUNNER_IMAGE_VERSION
-  tags:
-    - dev
  
 stages:
   - stage1
