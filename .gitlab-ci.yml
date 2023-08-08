@@ -9,9 +9,7 @@ stages:
 stage1:
   stage: stage1
   script:
-    - export MYVAR="SIT_env"
-    - echo "MYVAR=$MYVAR"
-    - echo "MYVAR=$MYVAR" >> variables.env
+    - $MYVAR=blabla
   artifacts:
     reports:
       dotenv: variables.env
